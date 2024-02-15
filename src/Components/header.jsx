@@ -41,6 +41,7 @@ const Header = () => {
     <div className="sticky top-0 z-10  font-roboto flex flex-row items-center justify-between h-14 px-4 md:px-5 bg-white dark:bg-black">
       {loading && <Loader />}
 
+      {/* mobileMenu */}
       <div className="flex h-5 items-center">
         {pageName !== "video" && (
           <div
@@ -66,6 +67,7 @@ const Header = () => {
           <img className="h-full md:hidden" src={ytLogoMobile} alt="Youtube" />
         </Link>
       </div>
+      {/* Search */}
       <div className="group flex items-center">
         <div className="flex h-8 md:h-10 md:ml-10 md:pl-5 border border-[#a1a1a1] dark:border-[#303030] rounded-l-3xl group-focus-within:border-blue-500 md:group-focus-within:ml-5 md:group-focus-within:pl-0">
           <div className="w-10 items-center justify-center hidden group-focus-within:md:flex">
@@ -84,6 +86,7 @@ const Header = () => {
           <IoIosSearch className="dark:text-white text-xl" />
         </button>
       </div>
+      {/* icons */}
       <div className="flex items-center">
         <div className="hidden md:flex">
           <div className="flex items-center justify-center h-10 w-10 rounded-full bg-black/[0.1] hover:bg-black/[0.3] dark:hover:bg-[#303030]/[0.6]">
@@ -94,7 +97,10 @@ const Header = () => {
           </div>
         </div>
         <div className="flex h-10 w-10 dark:h-9 dark:w-9 overflow-hidden rounded-full md:ml-4 border border-black-200 dark:border-none">
-          <img src="https://xsgames.co/randomusers/assets/avatars/pixel/11.jpg" alt="DP"/>
+          <img
+            src="https://xsgames.co/randomusers/assets/avatars/pixel/11.jpg"
+            alt="DP"
+          />
         </div>
       </div>
     </div>

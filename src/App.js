@@ -12,7 +12,7 @@ const App = () => {
   return (
     <AppContext >
       <Router>
-        <div className="flex flex-col h-full">
+        <div className="flex flex-col h-full scrollbar-hide">
           <Header />
           <Routes>
             <Route path='/' exact element={<Feed />} />
